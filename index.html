@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Conversor divisas</title>
+</head>
+
+<body>
+    <div id="wrapper">
+
+     <div id="content-img">
+        <img src="imagenes/divisas.png" alt="" />
+     </div>
+
+     <br><br>   
+     <input class="form-control form-control-sm" id="cantidad" type="text" placeholder="Cantidad de dinero:" aria-label=".form-control-sm example" onfocusout="validar()">
+     <br>
+    
+     <select name="moneda1" id="moneda1"></select>
+     <select name="moneda2" id="moneda2"></select>
+     <input type="button" id="boton" value="Convertir" onclick="calcular()">
+     
+
+
+
+     <div id="alert-mensaje">
+        <p id="resultado"></p>
+     </div>
+        
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
